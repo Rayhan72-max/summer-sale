@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+}
+
+.banner {
+    width:100% ;
+    background-color: #F9F6E2; /* Choose your desired background color */
+    color: #fff; /* Choose your desired text color */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.left-content {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+  }
+  
+  .right-content img {
+    width : 50%;
+    height: auto;
+    margin-right: 20px;
+  }
+  #promo{
+    background-color:#E527B2;
+    padding: 2px;
+    border-radius: 2px;
+  }
+
+  /* card section */
+  
+  .column {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 90%;
+    
+  }
+  
+  /* 3cards section */
+
+  #left-column {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: auto auto auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    padding : 20px
+    
+  }
+  #right-column{
+    border: 2px;
+    background-color: #fff;
+  }
+  #coupon-box{
+    background-color:yellow ;
+    height: 25%;
+  }
+  
+
+  
+
+  

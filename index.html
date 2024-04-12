@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--Banner section-->
+    <div class="banner">
+        <div class="left-content">
+          <h5 class="text-base">---SALE FEVER---</h5>
+          <h1 class="text-base">Purchase TK 200 or <br> above & get <span class="text-base" style="color:#E527B2;"> 20% off</span></h1>
+          <br> 
+          <br>
+          <h3 class="text-base">Use promo code <span class="text-base" id="promo">sell 200</span></h3>
+        </div>
+        <div class="right-content">
+          <img src="images/Summer 1.png" alt="Image">
+        </div>
+      </div>
+
+      <section class="bg-gray-400" style="align-items: center; margin: 20px;">
+    <!-- making 2columns section -->
+        
+        <div class="column">
+            
+            <!--3cards-->
+            <div>
+               <div>
+                <div>
+                <h1 class="text-2xl">Kitchenware</h1>
+                <div class="mt-2" id="left-column">
+                
+                <div id="prod1" class="card w-96 bg-base-100 shadow-xl w-80 p-2">
+                    <div class="bg-gray-400">
+                    <figure class="px-10 pt-10">
+                      <img src="images/prod1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                      <!--rating-->
+                      <div class="rating">
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" checked />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                      </div>
+                      <button id="first-product"> K. Accesories </button>
+                      <h5 id="fp-price" style="color: slategray;"> 390 </h5>
+                    </div>
+                  </div>
+
+                  <!--prod2-->
+                  <div id="prod2" class="card w-96 bg-base-100 shadow-xl w-80">
+                    <div class="bg-gray-400">
+                    <figure class="px-10 pt-10">
+                      <img src="images/prod2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    </div>
+                    <div class="card-body items-center text-center">                    
+                      <!--rating-->
+                      <div class="rating">
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" checked />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                      </div>
+                      <button id="second-product"> K. Accesories </button>
+                      <h5 id="sp-price" style="color: slategray;"> 25 </h5>
+                    </div>
+                  </div>
+
+                  <!--prod3-->
+                  <div id="prod3" class="card w-96 bg-base-100 shadow-xl w-80">
+                    <div class="bg-gray-400">
+                    <figure class="px-10 pt-10">
+                      <img src="images/prod3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                      <!--rating-->
+                      <div class="rating">
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" checked />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                      </div>
+                      <button id="third-product"> Home Cooker</button>
+                      <h5 id="tp-price" style="color: slategray;"> 49 </h5>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!--cart-->
+            <div class="mt-8 p-1" id="right-column">
+                <div id="coupon-box">
+                    <h2>Have Coupon</h2>
+                    <div style="display: flex;">
+                    <input id="coupon-field" style="width: 120px;"  type="text" placeholder="Coupon code">
+                    <button id="coupon-btn" class="bg-pink-600" disabled>Apply</button> 
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <ol id="item-list"  style="list-style-type:number">
+                        
+                    </ol>
+                </div>
+                <hr>
+                <div>
+                    <h3>Total Price : <span id="pricing">0.00</span></h3>
+                    <h3>Discount: <span id="discount">0.00</span></h3> 
+                    <h3>Total : <span id="total"> 0.00</span> </h3>
+                </div>
+                <button id="purchase-btn" class="bg-pink-600">Make Purchase</button>
+            </div>
+
+        </div>
+    </section>
+    <script src="purchase.js"></script>
+</body>
+</html>
